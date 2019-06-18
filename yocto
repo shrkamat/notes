@@ -1,0 +1,2 @@
+bitbake core-image-minimal --runall=fetch            // download only
+bitbake core-image-minimal -c populate_sdk           // populate sdk
