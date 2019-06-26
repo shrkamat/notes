@@ -1,3 +1,9 @@
 bitbake core-image-minimal --runall=fetch            // download only
 bitbake core-image-minimal -c populate_sdk           // populate sdk
 bitbake core-image-minimal -c cleansstate            // build clean for rebuild
+
+
+waf
+===
+CXX=${CLANGCXX} CC=${CLANGCC} LINKFLAGS='-stdlib=libc++' CXXFLAGS='-stdlib=libc++' ./waf configure --prefix=/opt/bench
+./waf build -v
